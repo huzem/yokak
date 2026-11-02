@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUZEM - B.4.2 Öğretim Yetkinlikleri ve Gelişimi Akreditasyon Kanıtları</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        hitit: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                            dark: '#002B49',
+                            burgundy: '#8B1E2F'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .badge-puko {
+            display: inline-flex;
+            align-items: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.2rem 0.6rem;
+            border-radius: 9999px;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <!-- Üst Başlık / Header -->
+    <header class="bg-hitit-dark text-white border-b-4 border-hitit-burgundy sticky top-0 z-50 shadow-md">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center gap-3">
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 bg-white text-hitit-dark font-black rounded-lg flex items-center justify-center text-xl shadow">
+                    HUZEM
+                </div>
+                <div>
+                    <h1 class="text-lg md:text-xl font-bold tracking-tight">HİTİT ÜNİVERSİTESİ</h1>
+                    <p class="text-xs text-slate-300 font-medium">Uzaktan Eğitim Uygulama ve Araştırma Merkezi (HUZEM)</p>
+                </div>
+            </div>
+            <div class="text-center md:text-right">
+                <span class="inline-block bg-hitit-burgundy/80 text-xs px-3 py-1 rounded-full font-semibold uppercase tracking-wider">
+                    YÖKAK B.4.2. Öğretim yetkinlikleri ve gelişimi 
+                </span>
+                <p class="text-xs text-slate-300 mt-1">Öğretim Yetkinlikleri ve Gelişimi</p>
+            </div>
+        </div>
+    </header>
+
+<!-- Giriş / Özet Banner -->
+    <section class="bg-gradient-to-b from-hitit-dark/5 to-transparent py-8 border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                <div class="flex flex-col md:flex-row md:items-start justify-between gap-4">
+                    <div class="space-y-2">
+                        <h2 class="text-xl font-bold text-slate-900">Kurumsal Yanıt ve Kapsam Açıklaması</h2>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            Hitit Üniversitesi Uzaktan Eğitim Uygulama ve Araştırma Merkezi'nin (HUZEM) gerçekleştirdiği faaliyetlere ilişkin <strong>“B.4.2. Öğretim yetkinlikleri ve gelişimi”</strong> soruları aşağıda cevaplandırılmıştır.
+                        </p>
+                        <div class="bg-slate-50 border border-slate-200 rounded-lg p-3 text-xs text-slate-600 space-y-1.5">
+                            <p>
+                                <i class="fa-solid fa-circle-info text-hitit-600 mr-1.5"></i>
+                                <strong>Kapsam Dışı Sorular:</strong> 3., 7. ve 9. sorular birimimizin görev ve faaliyet alanı dışında yer almaktadır.
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-chart-pie text-amber-600 mr-1.5"></i>
+                                <strong>Sınırlı Veri Paylaşımı:</strong> 6. soruya merkezi sistem yetkilendirme kısıtları nedeniyle sınırlı düzeyde yanıt verilebilmiştir.
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-file-circle-xmark text-slate-500 mr-1.5"></i>
+                                <strong>Senato Kararları:</strong> Kararlar HUZEM’e resmi yazıyla iletilmediğinden ve arama tabanlı bir arşiv erişim sistemimiz bulunmadığından doğrudan eklenememiştir.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row md:flex-col gap-2 shrink-0">
+                        <span class="badge-puko bg-blue-100 text-blue-800"><i class="fa-solid fa-list-check mr-1.5"></i> 6 Soru Cevaplandı</span>
+                        <span class="badge-puko bg-slate-100 text-slate-700"><i class="fa-solid fa-ban mr-1.5"></i> 3 Soru Kapsam Dışı</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ana İçerik / Soru Kartları -->
+    <main class="max-w-6xl mx-auto px-4 py-8 flex-grow space-y-8">
+
+        <!-- 1. Soru -->
+        <article id="soru-1" class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden transition hover:shadow-md">
+            <div class="p-6">
+                <div class="flex items-start justify-between gap-4 border-b border-slate-100 pb-4 mb-4">
+                    <div>
+                        <span class="text-xs font-bold text-hitit-burgundy uppercase tracking-wider">Soru 1</span>
+                        <h3 class="text-lg font-bold text-slate-900 mt-1">
+                            Öğretim Elemanlarının Pedagojik ve Mesleki Eğitim İhtiyaçlarının Belirlenmesi ve Eğitim Planlarına Yansıtılması
+                        </h3>
+                    </div>
+                    <span class="badge-puko bg-sky-100 text-sky-800 shrink-0">Planlama</span>
+                </div>
+                
+                <div class="text-slate-700 text-sm leading-relaxed space-y-3">
+                    <p>
+                        Öğretim elemanlarının pedagojik, teknolojik ve mesleki gelişim gereksinimleri; akademik birimlerin (Fakülte, Enstitü, Yüksekokul ve Meslek Yüksekokulları) ihtiyaçları doğrultusunda merkezimize ilettikleri <strong>resmi talep yazıları</strong> üzerinden belirlenmektedir.
+                    </p>
+                    <p>
+                        Gelen resmi talepler HUZEM tarafından içerik ve yetkinlik alanlarına göre analiz edilmekte; Hitit Eğitim Planı (HEP) hedefleriyle uyumlu yıllık eğiticilerin eğitimi programlarına dönüştürülerek kurumsal web sayfası üzerinden akademik personele duyurulmaktadır.
+                    </p>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-slate-100 bg-slate-50 -mx-6 -mb-6 p-6">
+                    <h4 class="text-xs font-bold text-slate-600 uppercase tracking-wider mb-3 flex items-center gap-1.5">
+                        <i class="fa-solid fa-paperclip text-hitit-600"></i> İlgili Kanıtlar ve Duyuru Bağlantıları
+                    </h4>
+                    <div class="flex flex-wrap gap-2">
+                        <a href="./soru1-birim-talep-yazilari.pdf" target="_blank" class="inline-flex items-center gap-2 px-3 py-2 bg-white border border-slate-300 rounded-lg text-xs font-medium text-slate-700 hover:bg-slate-100 hover:text-hitit-700 transition">
+                            <i class="fa-solid fa-file-pdf text-red-500"></i>
+                            Birim Talep Yazıları - 1 (PDF)
+                        </a>
+                        <a href="./soru1-birim-talep-yazilari-2.pdf" target="_blank" class="inline-flex items-center gap-2 px-3 py-2 bg-white border border-slate-300 rounded-lg text-xs font-medium text-slate-700 hover:bg-slate-100 hover:text-hitit-700 transition">
+                            <i class="fa-solid fa-file-pdf text-red-500"></i>
+                            Birim Talep Yazıları - 2 (PDF)
+                        </a>
+                        <a href="https://hitit.edu.tr/tr/uzem/tip-fakultesi-egiticilerin-egitimi" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3 py-2 bg-white border border-slate-300 rounded-lg text-xs font-medium text-slate-700 hover:bg-slate-100 hover:text-hitit-700 transition">
+                            <i class="fa-solid fa-arrow-up-right-from-square text-hitit-600"></i>
+                            Duyuru: Tıp Fakültesi Eğiticilerin Eğitimi
+                        </a>
+                        <a href="https://uzem.hitit.edu.tr/Duyurular/2024/10/31/2024-2025-egitim-ogretim-yili-egiticilerin-egitimi" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3 py-2 bg-white border border-slate-300 rounded-lg text-xs font-medium text-slate-700 hover:bg-slate-100 hover:text-hitit-700 transition">
+                            <i class="fa-solid fa-arrow-up-right-from-square text-hitit-600"></i>
+                            Duyuru: 2024-2025 Eğiticilerin Eğitimi Programı
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 2. Soru -->
+        <article id="soru-2" class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden transition hover:shadow-md">
+            <div class="p-6">
+                <div class="flex items-start justify-between gap-4 border-b border-slate-100 pb-4 mb-4">
+                    <div>
+                        <span class="text-xs font-bold text-hitit-burgundy uppercase tracking-wider">Soru 2</span>
+                        <h3 class="text-lg font-bold text-slate-900 mt-1">
+                            HUZEM Yıllık Eğiticilerin Eğitimi Programlarının Gerçekleşme Durumu ve Zorunluluk Esasları
+                        </h3>
+                    </div>
+                    <span class="badge-puko bg-emerald-100 text-emerald-800 shrink-0">Uygulama</span>
+                </div>
+                
+                <div class="text-slate-700 text-sm leading-relaxed space-y-3">
+                    <p>
+                        HUZEM tarafından yürütülen eğiticilerin eğitimi programları periyodik olarak her yıl icra edilmekte ve ayrıntılı <strong>Hitit Eğiticilerin Eğitimi Programı (HEEP) Faaliyet Raporları</strong> haline getirilerek kurumsal düzeyde yayımlanmaktadır.
+                    </p>
+                    <p>
+                        Yeni atanan öğretim elemanlarının kurumsal kültüre ve öğretim standartlarına uyumu Senato kararlarıyla yapılandırılmıştır. Senato kararları arama tabanlı merkezi sistemde yer aldığından ilgili kararlara merkezi yetkilendirme ile erişilebilmekte; eğitime katılan personelin resmi yazışmaları ve katılım listeleri HUZEM bünyesinde arşivlenmektedir.
+                    </p>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-slate-100 bg-slate-50 -mx-6 -mb-6 p-6">
+                    <h4 class="text-xs font-bold text-slate-600 uppercase tracking-wider mb-3 flex items-center gap-1.5">
+                        <i class="fa-solid fa-file-pdf text-red-600"></i> HEEP Yıllık Raporları, Katılım Listesi ve Resmi Yazışmalar
+                    </h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
+                        <a href="https://cdn.hitit.edu.tr/uzem/UnitFiles/heep-2021-20261019154809338.pdf" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 p-2 bg-white border border-slate-200 rounded-md text-xs text-slate-700 hover:border-hitit-600 transition">
+                            <i class="fa-solid fa-file-pdf text-red-500"></i> HEEP 2021 Raporu
+                        </a>
+                        <a href="https://cdn.hitit.edu.tr/uzem/UnitFiles/heep-2023-20261019154808458.pdf" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 p-2 bg-white border border-slate-200 rounded-md text-xs text-slate-700 hover:border-hitit-600 transition">
+                            <i class="fa-solid fa-file-pdf text-red-500"></i> HEEP 2023 Raporu
+                        </a>
+                        <a href="https://cdn.hitit.edu.tr/uzem/UnitFiles/heep-2024-20260408155649096.pdf" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 p-2 bg-white border border-slate-200 rounded-md text-xs text-slate-700 hover:border-hitit-600 transition">
+                            <i class="fa-solid fa-file-pdf text-red-500"></i> HEEP 2024 Raporu
+                        </a>
+                        <a href="https://cdn.hitit.edu.tr/uzem/UnitFiles/heep-2025-20260408155649096.pdf" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 p-2 bg-white border border-slate-200 rounded-md text-xs text-slate-700 hover:border-hitit-600 transition">
+                            <i class="fa-solid fa-file-pdf text-red-500"></i> HEEP 2025 Raporu
+                        </a>
+                        <a href="https://cdn.hitit.edu.tr/uzem/UnitFiles/heep-2026-20260408155649322.pdf" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 p-2 bg-white border border-slate-200 rounded-md text-xs text-slate-700 hover:border-hitit-600 transition">
+                            <i class="fa-solid fa-file-pdf text-red-500"></i> HEEP 2026 Raporu
+                        </a>
+                        <a href="./soru2-egitim-katilimci-listesi-ornegi.pdf" target="_blank" class="flex items-center gap-2 p-2 bg-blue-50 border border-blue-200 rounded-md text-xs font-semibold text-hitit-800 hover:bg-blue-100 transition">
+                            <i class="fa-solid fa-file-pdf text-red-500"></i> Katılımcı Listesi Örneği (PDF)
+                        </a>
+                        <a href="./soru2-listeye-iliskin-resmi-yazi.pdf" target="_blank" class="flex items-center gap-2 p-2 bg-blue-50 border border-blue-200 rounded-md text-xs font-semibold text-hitit-800 hover:bg-blue-100 transition sm:col-span-2 md:col-span-3">
+                            <i class="fa-solid fa-file-signature text-hitit-700"></i> Katılım Listesine İlişkin Resmi Yazı (PDF)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 4. Soru -->
+        <article id="soru-4" class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden transition hover:shadow-md">
+            <div class="p-6">
+                <div class="flex items-start justify-between gap-4 border-b border-slate-100 pb-4 mb-4">
+                    <div>
+                        <span class="text-xs font-bold text-hitit-burgundy uppercase tracking-wider">Soru 4</span>
+                        <h3 class="text-lg font-bold text-slate-900 mt-1">
+                            Yapay Zekâ ve Dijital Öğretim Kılavuzlarının Erişimi, Kullanımı ve İzleme Durumu
+                        </h3>
+                    </div>
+                    <span class="badge-puko bg-indigo-100 text-indigo-800 shrink-0">Dijital Rehberlik</span>
+                </div>
+                
+                <div class="text-slate-700 text-sm leading-relaxed space-y-3">
+                    <p>
+                        Öğretim elemanlarının dijital yeterliliklerini desteklemek ve yapay zekâ teknolojilerinin ders tasarımına entegrasyonunu sağlamak amacıyla <strong>Yapay Zekâ Destekli Öğretim Kılavuzu</strong> hazırlanmış olup, HUZEM kurumsal web sayfasında <em>Kaynak Kütüphanesi &rarr; Öğretim Elemanı</em> sekmesi üzerinden sürekli açık erişime sunulmuştur.
+                    </p>
+                    <div class="bg-amber-50 border-l-4 border-amber-500 p-3 rounded text-xs text-amber-900">
+                        <strong class="font-semibold">İzleme ve Veri Kısıtı:</strong> Kılavuzun indirilme logları, tekil erişim sayıları ve sunucu taraflı web analitik istatistikleri üniversitemizin merkezi Bilgi İşlem / Web Yönetimi yetki alanında yer aldığından merkezimiz operasyonel erişimine kapalıdır.
+                    </div>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-slate-100 bg-slate-50 -mx-6 -mb-6 p-6">
+                    <h4 class="text-xs font-bold text-slate-600 uppercase tracking-wider mb-3 flex items-center gap-1.5">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-hitit-600"></i> Doğrudan Web Erişim Yolu
+                    </h4>
+                    <div>
+                        <a href="https://hitit.edu.tr/tr/uzem" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3 py-2 bg-white border border-slate-300 rounded-lg text-xs font-medium text-slate-700 hover:bg-slate-100 hover:text-hitit-700 transition">
+                            <i class="fa-solid fa-globe text-hitit-600"></i>
+                            HUZEM Web Sitesi (Kaynak Kütüphanesi &rarr; Öğretim Elemanı Menüsü)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 5. Soru -->
+        <article id="soru-5" class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden transition hover:shadow-md">
+            <div class="p-6">
+                <div class="flex items-start justify-between gap-4 border-b border-slate-100 pb-4 mb-4">
+                    <div>
+                        <span class="text-xs font-bold text-hitit-burgundy uppercase tracking-wider">Soru 5</span>
+                        <h3 class="text-lg font-bold text-slate-900 mt-1">
+                            Eğitime Katılan Öğretim Elemanlarının Öğrenci Memnuniyet ve Sınav Tasarımı İzleme Süreçleri
+                        </h3>
+                    </div>
+                    <span class="badge-puko bg-purple-100 text-purple-800 shrink-0">Etki Analizi</span>
+                </div>
+                
+                <div class="text-slate-700 text-sm leading-relaxed space-y-3">
+                    <p>
+                        Eğiticilerin eğitimi programlarına katılan akademik personelin sonraki dönem ders değerlendirme memnuniyet puanları ve sınav tasarımlarına ilişkin değişimlerin takibi, belirli dönemlerde HUZEM bünyesinde yerel analiz tabloları üzerinden yürütülmüştür.
+                    </p>
+                    <p>
+                        Söz konusu izleme süreçleri ilerleyen dönemlerde üniversitenin merkezi çevrim içi platformlarına taşınmış olup, güncel sistem veritabanı sorgulamaları ve çapraz analizler merkezi sistem yöneticisi (admin) yetkilendirmesi kapsamındadır.
+                    </p>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-slate-100 bg-slate-50 -mx-6 -mb-6 p-6">
+                    <h4 class="text-xs font-bold text-slate-600 uppercase tracking-wider mb-3 flex items-center gap-1.5">
+                        <i class="fa-solid fa-file-waveform text-emerald-600"></i> Yerel Analiz Belgesi
+                    </h4>
+                    <div>
+                        <a href="./soru5-degerlendirme-puan-karsilastirma.pdf" target="_blank" class="inline-flex items-center gap-2 px-3 py-2 bg-white border border-slate-300 rounded-lg text-xs font-medium text-slate-700 hover:bg-slate-100 hover:text-hitit-700 transition">
+                            <i class="fa-solid fa-file-pdf text-red-500"></i>
+                            Ders Değerlendirme Puan Karşılaştırma Belgesi (PDF)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 6. Soru -->
+        <article id="soru-6" class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden transition hover:shadow-md">
+            <div class="p-6">
+                <div class="flex items-start justify-between gap-4 border-b border-slate-100 pb-4 mb-4">
+                    <div>
+                        <span class="text-xs font-bold text-hitit-burgundy uppercase tracking-wider">Soru 6</span>
+                        <h3 class="text-lg font-bold text-slate-900 mt-1">
+                            Öğrenci Ders Değerlendirme Anketleri Yanıt ve Katılım Oranlarının İzlenmesi
+                        </h3>
+                    </div>
+                    <span class="badge-puko bg-amber-100 text-amber-800 shrink-0">Katılım İzleme</span>
+                </div>
+                
+                <div class="text-slate-700 text-sm leading-relaxed space-y-3">
+                    <p>
+                        Öğrenci ders değerlendirme anketlerinin birim ve ders bazındaki anlık yanıt oranları ile ham veri tabanı, ÖBS ve merkezi otomasyon sisteminde bulunmakta olup doğrudan merkezi sistem yöneticisi (admin) yetkisindedir.
+                    </p>
+                    <p>
+                        Anket süreçlerinin yerel takip edildiği dönemlerde, öğrencilerin katılım ve devam durumları yerel karşılaştırma modelleriyle izlenmiştir. Bu kapsamdaki kayıtlar 5. soruda sunulan yerel veri belgesiyle arşivlenmektedir.
+                    </p>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-slate-100 bg-slate-50 -mx-6 -mb-6 p-6">
+                    <h4 class="text-xs font-bold text-slate-600 uppercase tracking-wider mb-3 flex items-center gap-1.5">
+                        <i class="fa-solid fa-link text-hitit-600"></i> Yerel Süreç Devam ve Katılım Kaydı
+                    </h4>
+                    <div>
+                        <a href="./soru5-degerlendirme-puan-karsilastirma.pdf" target="_blank" class="inline-flex items-center gap-2 px-3 py-2 bg-white border border-slate-300 rounded-lg text-xs font-medium text-slate-700 hover:bg-slate-100 hover:text-hitit-700 transition">
+                            <i class="fa-solid fa-file-pdf text-red-500"></i>
+                            Yerel Dönem Katılım ve Devam Durumu Kaydı (soru5 belgesi üzerinden)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 8. Soru -->
+        <article id="soru-8" class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden transition hover:shadow-md">
+            <div class="p-6">
+                <div class="flex items-start justify-between gap-4 border-b border-slate-100 pb-4 mb-4">
+                    <div>
+                        <span class="text-xs font-bold text-hitit-burgundy uppercase tracking-wider">Soru 8</span>
+                        <h3 class="text-lg font-bold text-slate-900 mt-1">
+                            Öğretim Yetkinliklerinin Gelişimine Yönelik Asenkron Kılavuzlar ve Uygulama Desteği
+                        </h3>
+                    </div>
+                    <span class="badge-puko bg-teal-100 text-teal-800 shrink-0">Sürekli İyileştirme</span>
+                </div>
+                
+                <div class="text-slate-700 text-sm leading-relaxed space-y-3">
+                    <p>
+                        Akademik birimlerden gelen taleplere istinaden hedefe yönelik mesleki gelişim eğitimleri organize edilmektedir. Bu eğitim faaliyetlerine ek olarak, öğretim elemanlarının asenkron ve sürekli gelişimini sağlamak üzere HUZEM resmi web sitesinde (<em>Kaynak Kütüphanesi &rarr; Öğretim Elemanı</em>) üç kritik kılavuz yayımlanmıştır:
+                    </p>
+                    <ul class="list-disc list-inside space-y-1.5 text-slate-700 pl-2">
+                        <li><strong>Yeterlilik Temelli Ölçme-Değerlendirme Kılavuzu:</strong> Birimlerden gelen dönütler ve öğretim elemanlarının sahadaki iyi uygulama örnekleri entegre edilmiştir.</li>
+                        <li><strong>Yapay Zekâ Destekli Öğretim Kılavuzu</strong></li>
+                        <li><strong>Ders Öğrenme & Program Çıktılarını İzleme Kılavuzu</strong></li>
+                    </ul>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-slate-100 bg-slate-50 -mx-6 -mb-6 p-6">
+                    <h4 class="text-xs font-bold text-slate-600 uppercase tracking-wider mb-3 flex items-center gap-1.5">
+                        <i class="fa-solid fa-book-open text-teal-600"></i> Çevrim İçi Kütüphane Erişimi
+                    </h4>
+                    <div>
+                        <a href="https://hitit.edu.tr/tr/uzem" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3 py-2 bg-white border border-slate-300 rounded-lg text-xs font-medium text-slate-700 hover:bg-slate-100 hover:text-hitit-700 transition">
+                            <i class="fa-solid fa-arrow-up-right-from-square text-hitit-600"></i>
+                            HUZEM Kaynak Kütüphanesi (Öğretim Elemanı Kılavuzları)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 10. Soru -->
+        <article id="soru-10" class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden transition hover:shadow-md">
+            <div class="p-6">
+                <div class="flex items-start justify-between gap-4 border-b border-slate-100 pb-4 mb-4">
+                    <div>
+                        <span class="text-xs font-bold text-hitit-burgundy uppercase tracking-wider">Soru 10</span>
+                        <h3 class="text-lg font-bold text-slate-900 mt-1">
+                            MYO Öğretim Görevlileri İçin Temel Öğretim ve Ölçme Becerileri Uyum Programı
+                        </h3>
+                    </div>
+                    <span class="badge-puko bg-rose-100 text-rose-800 shrink-0">Uyum & Sertifikasyon</span>
+                </div>
+                
+                <div class="text-slate-700 text-sm leading-relaxed space-y-3">
+                    <p>
+                        Pedagojik formasyon veya eğitim fakültesi mezunu olmayan, meslek yüksekokullarında doğrudan ders görevine başlayan öğretim görevlileri için temel öğretim yöntemleri, sınıf yönetimi ve ölçme-değerlendirme ilkelerini kapsayan eğiticilerin eğitimi programları yürütülmektedir.
+                    </p>
+                    <p>
+                        Eğitimin zorunluluk çerçevesi Senato Kararları ile yapılandırılmış olup, Senato kararlarına arama tabanlı merkezi sistem yetkilendirmesiyle ulaşılabilmektedir. Eğitimi başarıyla tamamlayan öğretim elemanlarına düzenlenen katılım/başarı sertifikalarının örnekleri merkezimiz arşivinde yer almaktadır.
+                    </p>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-slate-100 bg-slate-50 -mx-6 -mb-6 p-6">
+                    <h4 class="text-xs font-bold text-slate-600 uppercase tracking-wider mb-3 flex items-center gap-1.5">
+                        <i class="fa-solid fa-certificate text-rose-600"></i> Katılım ve Başarı Sertifikası Örnekleri
+                    </h4>
+                    <div class="flex flex-wrap gap-2">
+                        <a href="./soru10-sertifika-ornegi.pdf" target="_blank" class="inline-flex items-center gap-2 px-3 py-2 bg-white border border-slate-200 rounded-lg text-xs font-medium text-slate-700 hover:border-hitit-600 transition">
+                            <i class="fa-solid fa-file-pdf text-red-500"></i> Sertifika Örneği 1 (PDF)
+                        </a>
+                        <a href="./soru10-sertifika-ornegi-2.pdf" target="_blank" class="inline-flex items-center gap-2 px-3 py-2 bg-white border border-slate-200 rounded-lg text-xs font-medium text-slate-700 hover:border-hitit-600 transition">
+                            <i class="fa-solid fa-file-pdf text-red-500"></i> Sertifika Örneği 2 (PDF)
+                        </a>
+                        <a href="./soru10-sertifika-ornegi-3.pdf" target="_blank" class="inline-flex items-center gap-2 px-3 py-2 bg-white border border-slate-200 rounded-lg text-xs font-medium text-slate-700 hover:border-hitit-600 transition">
+                            <i class="fa-solid fa-file-pdf text-red-500"></i> Sertifika Örneği 3 (PDF)
+                        </a>
+                        <a href="./soru10-sertifika-ornegi-4.pdf" target="_blank" class="inline-flex items-center gap-2 px-3 py-2 bg-white border border-slate-200 rounded-lg text-xs font-medium text-slate-700 hover:border-hitit-600 transition">
+                            <i class="fa-solid fa-file-pdf text-red-500"></i> Sertifika Örneği 4 (PDF)
+                        </a>
+                        <a href="./soru10-sertifika-ornegi-5.pdf" target="_blank" class="inline-flex items-center gap-2 px-3 py-2 bg-white border border-slate-200 rounded-lg text-xs font-medium text-slate-700 hover:border-hitit-600 transition">
+                            <i class="fa-solid fa-file-pdf text-red-500"></i> Sertifika Örneği 5 (PDF)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- Alt Bilgi / Footer -->
+    <footer class="bg-white border-t border-slate-200 py-6 text-center text-xs text-slate-500">
+        <div class="max-w-6xl mx-auto px-4">
+            <p class="font-medium text-slate-700">Hitit Üniversitesi Uzaktan Eğitim Uygulama ve Araştırma Merkezi (HUZEM)</p>
+            <p class="mt-1">YÖKAK Kurumsal Akreditasyon Ölçütleri B.4.2 Bilgi Portalı &copy; 2026</p>
+        </div>
+    </footer>
+
+</body>
+</html>
